@@ -39,9 +39,7 @@ router.post('/bmicalculator', (req, res) => {
 
   res.send(`
     <script>
-      // Show the result in an alert
       alert("${resultMessage.replace(/"/g, '\\"')}");
-      // Redirect back to the BMI calculator page
       window.location.href = '/bmicalculator';
     </script>
   `);
