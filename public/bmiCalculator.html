@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">BMI Calculator</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home Page</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<section>
+  <div class="theme">
+  </div>
+  <div class="container calculator-container">
+    <h2 class="text-center mb-4">BMI Calculator</h2>
+    <form id="bmiForm" action="/bmiCalculator" method="post">
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" class="form-control" name="age" placeholder="Enter age" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select class="form-control" name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="height">Height:</label>
+        <div class="input-group">
+          <input type="number" step="any" class="form-control" name="height" placeholder="Enter height" required>
+          <div class="input-group-append">
+            <select class="input-group-text" name="heightUnit" required>
+              <option value="m">m</option>
+              <option value="in">in</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="weight">Weight:</label>
+        <div class="input-group">
+          <input type="number" class="form-control" name="weight" placeholder="Enter weight" required>
+          <div class="input-group-append">
+            <select class="input-group-text" name="weightUnit" required>
+              <option value="kg">kg</option>
+              <option value="lbs">lbs</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-calculate btn-block">Calculate BMI</button>
+    </form>
+    
+    <div id="result" class="mt-3 text-center"></div>
+  </div>
+</section>
+
+<footer class="text-center mt-5">
+  <p>Created by Uapov Gani | SE-2206</p>
+</footer>
+
+
+
+
+
+
+</body>
+</html>
