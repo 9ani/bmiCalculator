@@ -1,6 +1,6 @@
 body {
   background-color: #edcb46  ;
-  margin: 0; /* Remove default margin to ensure full width */
+  margin: 0; 
   background-image: url(t3.avif);
   background-repeat: no-repeat;
   background-size:cover;
